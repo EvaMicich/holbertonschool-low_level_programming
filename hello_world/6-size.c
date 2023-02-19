@@ -6,7 +6,7 @@
 int main(void)
 {
 	int i;
-	double d:
+	double d;
 	char c;
 
 	printf("The size of an int is: %lu.\n", (unsigned long)sizeof(i));
