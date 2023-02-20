@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *Determines if random number is postitve or negative
- *main - generates random number, determines positive or negative
+ *main - Determines if random number is postitve or negative
+ *return: Always 0 (Success)
  */
 int main(void)
 {
