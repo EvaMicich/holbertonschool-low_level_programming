@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <ctype.h>
+
 /**
 *main-Entry point
 *Return: Always 0 (Success)
@@ -8,7 +10,7 @@
 
 int main(void)
 {
-	int x = 'a';
+	int x = 'a', y = 'A';
 
 	while (x <= 'z')
 	{
@@ -17,12 +19,12 @@ int main(void)
 		x++;
 	}
 
-	x = 'A';
-	while (x <= 'Z')
+	y = 'A';
+	while (y <= 'Z')
 	{
-		x = toupper(x);
-		putchar(x);
-		x++;
+		y = toupper(y);
+		putchar(y);
+		y++;
 	}
 
 	printf("\n");
