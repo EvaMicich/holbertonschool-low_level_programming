@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	int x = 0;
+	char x = '0';
 
-	while (x < 10)
+	while (x <= '9')
 	{
 		putchar(x);
-		x++;
+		x = x + 1;
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
