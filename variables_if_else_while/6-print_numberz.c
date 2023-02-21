@@ -9,15 +9,15 @@
 
 int main(void)
 {
-	char x = '0';
+	char x = 49;
 
-	while (x <= '9')
+	while (x <= 57)
 	{
 		putchar(x);
 		x = x + 1;
 	}
 
-	putchar('\n');
+	putchar(10);
 
 	return (0);
 
