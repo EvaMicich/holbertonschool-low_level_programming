@@ -2,23 +2,22 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-
 /**
- *main - Entry point
+ *main - print 0-9 using only printchar
  *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int x = 0;
+	char x = '0';
 
-	while (x < 10)
+	while (x <= '9')
 	{
 		putchar(x);
-		x++;
+		x = x + 1;
 	}
 
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 
