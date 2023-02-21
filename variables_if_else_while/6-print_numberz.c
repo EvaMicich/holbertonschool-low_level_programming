@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char x = 49;
+	int x = 49;
 
 	while (x <= 57)
 	{
