@@ -2,10 +2,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *main - writes the alphabet
+ *print_alphabet - writes the alphabet
  * _putchar - writes the character c to stdout
  *
- * Return: On success 0.
  */
 
 void print_alphabet(void)
@@ -19,5 +18,4 @@ void print_alphabet(void)
 		c = c + 1;
 	}
 	_putchar('\n');
-	return;
 }
