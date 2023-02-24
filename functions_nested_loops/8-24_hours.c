@@ -1,14 +1,4 @@
 #include "main.h"
-
-void print_time(int hours, int minutes)
-{
-	_putchar((hours / 10) + '0');
-	_putchar((hours % 10) + '0');
-	_putchar(':');
-	_putchar((minutes / 10) + '0');
-	_putchar((minutes % 10) + '0');
-}
-
 /**
  * jack_bauer - prints every minute of the day
  * print_time - prints time in format hh:mm
@@ -23,7 +13,11 @@ void jack_bauer(void)
 		min = 0;
 		while (min < 60)
 		{
-			print_time(hr, min);
+			_putchar((hr / 10) + '0');
+			_putchar((hr % 10) + '0');
+			_putchar(':');
+			_putchar((min / 10) + '0');
+			_putchar((min % 10) + '0');
 			_putchar('\n');
 			min = min + 1;
 		}
