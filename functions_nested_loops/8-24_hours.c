@@ -11,6 +11,7 @@ void print_time(int hours, int minutes)
 
 /**
  * jack_bauer - prints every minute of the day
+ * print_time - prints time in format hh:mm
  * Return: Always 0.
  */
 void jack_bauer(void)
