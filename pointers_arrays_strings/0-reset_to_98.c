@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * reset_to_98 - changes the *n value to 98
  *
  * Return: Always 0.
  */
