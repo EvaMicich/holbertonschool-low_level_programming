@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* void puts2 - returns string backwards
+* puts2 - returns string backwards
 * @str: pointer to str string array in main
 * Return: Void
 */
