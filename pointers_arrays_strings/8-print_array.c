@@ -16,6 +16,5 @@ void print_array(int *a, int n)
 		printf("%d, ", a[c]);
 		c = c + 1;
 	}
-	printf("\b\b \b\b");
 	putchar('\n');
 }
