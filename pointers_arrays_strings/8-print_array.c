@@ -10,12 +10,16 @@
 void print_array(int *a, int n)
 {
 	int c = 0;
+	int stop_comma = (n - 1);
 
-	while (c < (n - 1))
+	while (c < n)
 	{
-		printf("%d, ", a[c]);
+		printf("%d", a[c]);
+		if (c < stop_comma)
+		{
+			printf(", ");
+		}
 		c = c + 1;
 	}
-	printf("%d", a[n]);
 	putchar('\n');
 }
