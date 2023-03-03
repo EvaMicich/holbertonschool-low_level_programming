@@ -5,6 +5,7 @@
  * _strncat - concatenates 2 strings
  * @dest: concat strin returned to this variable
  * @src: string to concat
+ * @n: limit of chars to be transferred
  * Return: char* of concat string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -15,14 +16,14 @@ char *_strncat(char *dest, char *src, int n)
     /* find the offset of the null terminator in dest */
 	while (dest[i] != '\0')
 	{
-		i++;
+		i = i + 1;
 	}
-    /* copy the bytes from the src string there */
+    /* copy the bytes from the src string there, stopping at the nth char */
 	while ((k < n) && (src[k] != '\0'))
 	{
 		dest[i] = src[k];
-		i++;
-		k++;
+		i = i + 1;
+		k = k + 1;
 	}
     /* set the null terminator */
 	dest[i] = '\0';
