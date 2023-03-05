@@ -28,7 +28,7 @@ unsigned int _strspn(char *s, char *accept)
 			index = index + 1;
 		}
 
-		s = S + 1;
+		s = s + 1;
 	}
 
 	return (bytes);
