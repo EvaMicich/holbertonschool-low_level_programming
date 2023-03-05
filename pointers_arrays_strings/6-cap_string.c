@@ -31,14 +31,12 @@ char *cap_string(char *str)
 			    str[index - 1] == '{' ||
 			    str[index - 1] == '}' ||
 			    index == 0)
+/*if the remaining lower case is the first char, or preceeded by special char,*/
 			{
 				str[index] = str[index] - 32;
+/*replace with capital letter, by using ascii code - 32. move to the next char*/
 			{
-				index = index + 1;
-/*
- *if the remaining lower case is the first char, or preceeded by special char,
- *replace with capital letter, by using ascii code - 32. move to the next char
- */
+		index = index + 1;
 	}
 	return (str);
 /*return the string with replaced capital letters*/
