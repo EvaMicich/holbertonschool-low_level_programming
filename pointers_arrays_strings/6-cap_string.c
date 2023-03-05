@@ -34,7 +34,7 @@ char *cap_string(char *str)
 			{
 				str[index] = str[index] - 32;
 			{
-		index = index + 1;
+				index = index + 1;
 /*
  *if the remaining lower case is the first char, or preceeded by special char,
  *replace with capital letter, by using ascii code - 32. move to the next char
