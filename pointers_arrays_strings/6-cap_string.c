@@ -10,12 +10,13 @@ char *cap_string(char *str)
 {
 	int index = 0;
 
-	while (str[index])
+	while (str[index] != '\0') /*check each char until end*/
 	{
 		while (!(str[index] >= 'a' && str[index] <= 'z'))
 		{
 			index = index + 1;
 		}
+/*while char is not a lower case char, move to next char*/
 			if (str[index - 1] == ' ' ||
 			    str[index - 1] == '\t' ||
 			    str[index - 1] == '\n' ||
@@ -32,9 +33,13 @@ char *cap_string(char *str)
 			    index == 0)
 			{
 				str[index] = str[index] - 32;
-			}
+			{
 		index = index + 1;
+/*
+ *if the remaining lower case is the first char, or preceeded by special char,
+ *replace with capital letter, by using ascii code - 32. move to the next char
+ */
 	}
-
 	return (str);
+/*return the string with replaced capital letters*/
 }
