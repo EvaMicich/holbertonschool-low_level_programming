@@ -41,7 +41,7 @@ int _sqrt_recursion(int n)
 		return (n);
 	}
 
-	else if (n > 1)
+	else
 	{
 		return (_sqr_checker(1, n));
 	}
