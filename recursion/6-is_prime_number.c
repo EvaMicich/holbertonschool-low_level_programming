@@ -7,7 +7,7 @@
  */
 int prime_checker(int i, int n)
 {
-	while (i < n)
+	if (i < n)
 	{
 		if ((n % i) == 0)
 		{
@@ -18,7 +18,10 @@ int prime_checker(int i, int n)
 			return (prime_checker(i + 1, n));
 		}
 	}
-	return (1);
+	else
+	{
+		return (1);
+	}
 }
 
 /**
