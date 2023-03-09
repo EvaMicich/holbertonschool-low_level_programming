@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 /**
  *is_num - checks if string is number
  *@str: string to test
@@ -8,20 +9,22 @@
  */
 int is_num(char *str)
 {
-	if (*str == '0')
-	{
-		return (1);
-	}
-	else if (atoi(str) == 0)
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
-}
+	int i;
 
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (!((str[i] >= '0') && (str[i] <= '9')))
+		{
+			return (0);
+		}
+		else
+		{
+			i = i + 1;
+		}
+	}
+	return (1);
+}
 /**
  *main - multiplies 2 numbers
  *@argc: tesxt from command line
