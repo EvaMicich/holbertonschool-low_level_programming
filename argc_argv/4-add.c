@@ -14,14 +14,11 @@ int is_num(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!((str[i] >= '0') && (str[i] <= '9')))
+		if (isdigit(str[i]) == 0)
 		{
 			return (0);
 		}
-		else
-		{
-			i = i + 1;
-		}
+		i = i + 1;
 	}
 	return (1);
 }
@@ -51,12 +48,9 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-		else
-		{
-			val = atoi(argv[i]);
-			sum = sum + val;
-			i = i + 1;
-		}
+		val = atoi(argv[i]);
+		sum = sum + val;
+		i = i + 1;
 	}
 	printf("%d\n", sum);
 	return (0);
