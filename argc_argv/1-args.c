@@ -7,7 +7,10 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	int adjust_arg;
+
+	adjust_arg = argc - 1;
+	printf("%d\n", adjust_arg);
 	(void)argv;
 	return (0);
 }
