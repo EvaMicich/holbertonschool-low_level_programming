@@ -11,10 +11,17 @@
  *
  * Return: pointer to array.
  */
-char *create_array(unsigned int size,__attribute__((unused)) char c)
+char *create_array(unsigned int size, char c)
 {
 	char *array;
+	unsigned int i;
 
 	array = malloc(sizeof(char) * size);
+	i = 0;
+	while (i < size)
+	{
+		array[i] = c;
+		i = i + 1;
+	}
 	return (array);
 }
