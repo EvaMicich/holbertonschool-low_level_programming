@@ -13,6 +13,10 @@ void *malloc_checked(unsigned int b)
 {
 	int *mem;
 
-	mem = malloc (b);
+	mem = malloc(b);
+	if (mem == NULL)
+	{
+		printf("98");
+	}
 	return (mem);
 }
