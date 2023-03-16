@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
 * _strlen - returns length of sting s
 * @s: pointer to s string in main
@@ -31,8 +32,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 	unsigned int len_s1;
 	unsigned int len_s2;
-	int i;
-	int j;
+	unsigned int i;
+	unsigned int j;
 
 	if (s1 == NULL)
 	{
@@ -42,8 +43,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	len_s1 = _strlen(s1);
-	len_s2 = _strlen(s2);
+	len_s1 = strlen(s1);
+	len_s2 = strlen(s2);
 	if (n < len_s2)
 	{
 		len_s2 = n;
@@ -53,20 +54,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	return (str);
 	i = 0;
-	while (i != '\0')
+	while (i < len_s1)
 	{
 		str[i] = s1[i];
 		i = i + 1;
 	}
+
 	j = 0;
-	while (j != '\0')
+	while (j <= len_s2)
 	{
 		str[i] = s2[j];
 		j = j + 1;
 		i = i + 1;
 	}
+
 	str[i] = '\0';
 	return (str);
 }
