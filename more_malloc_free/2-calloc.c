@@ -1,0 +1,28 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/**
+ * _calloc - returns a pointer to enough space for an array of nmem objects of
+ *the specified size
+ *
+ * @nmemb: number of objects in array
+ * @size: size of object
+ *
+ * Return: pointer to string concat in memory
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	unsigned int *ptr;
+
+	if (nmemb == 0 || size == 0)
+	{
+		return (NULL);
+	}
+	ptr = malloc(nmemb * size);
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	return (ptr);
+}
