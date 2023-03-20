@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "dog.h"
 /**
  * init_dog - adds dog to list
  * @d: the struct for dog data
