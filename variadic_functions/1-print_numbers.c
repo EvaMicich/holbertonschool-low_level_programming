@@ -8,13 +8,17 @@
  *
  * Return: void
  */
-void print_numbers(__attribute__((unused))const char *separator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
 
 	va_start(ap, n);
 
+	if (separator == NULL)
+	{
+		separator = "";
+	}
 	i = 0;
 	while (i < n)
 	{
