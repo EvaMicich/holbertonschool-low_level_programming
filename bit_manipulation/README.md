@@ -1,31 +1,47 @@
-C - Bit manipulation
+# Bit Manipulation Project
 
-0. 0
-Write a function that converts a binary number to an unsigned int.
-Prototype: unsigned int binary_to_uint(const char *b);
-0-binary_to_uint.c
+This repository contains C solutions for tasks on bit manipulation.
 
-1. 1
-Write a function that prints the binary representation of a number.
-Prototype: void print_binary(unsigned long int n);
-1-print_binary.c
+## Tasks
 
-2. 10
-Write a function that returns the value of a bit at a given index.
-Prototype: int get_bit(unsigned long int n, unsigned int index);
-2-get_bit.c
+### 0. Binary to Unsigned Int
 
-3. 11
-Write a function that sets the value of a bit to 1 at a given index.
-Prototype: int set_bit(unsigned long int *n, unsigned int index);
-3-set_bit.c
+Converts a binary number to an unsigned int.  
+File: `0-binary_to_uint.c`
 
-4. 100
-Write a function that sets the value of a bit to 0 at a given index.
-Prototype: int clear_bit(unsigned long int *n, unsigned int index);
-4-clear_bit.c
+### 1. Print Binary
 
-5. 101
-Write a function that returns the number of bits you would need to flip to get from one number to another.
-Prototype: unsigned int flip_bits(unsigned long int n, unsigned long int m);
-5-flip_bits.c
+Prints the binary representation of a number.  
+File: `1-print_binary.c`
+
+### 2. Get Bit
+
+Returns the value of a bit at a given index.  
+File: `2-get_bit.c`
+
+### 3. Set Bit
+
+Sets the value of a bit to 1 at a given index.  
+File: `3-set_bit.c`
+
+### 4. Clear Bit
+
+Sets the value of a bit to 0 at a given index.  
+File: `4-clear_bit.c`
+
+### 5. Flip Bits
+
+Returns the number of bits to flip to get from one number to another.  
+File: `5-flip_bits.c`
+
+## Compilation
+
+shCopy code
+
+`gcc -Wall -pedantic -Werror -Wextra -std=gnu89 <main_file> <task_file> -o <output_file>`
+
+## Usage
+
+sh
+
+`./<output_file>`
