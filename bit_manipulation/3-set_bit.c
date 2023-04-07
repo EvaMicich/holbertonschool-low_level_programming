@@ -10,7 +10,7 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	long unsigned int i;
+	unsigned long int i;
 
 	if (sizeof(n) * 8 < index)
 	{
