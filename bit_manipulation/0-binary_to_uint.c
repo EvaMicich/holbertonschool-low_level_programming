@@ -31,6 +31,10 @@ unsigned int binary_to_uint(const char *b)
 
 	num = 0;
 	index = 0;
+	if (b == NULL)
+	{
+		return (0);
+	}
 	while (b[index] != '\0')
 	{
 		if (is_binary(b[index]) == 0)
