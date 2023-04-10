@@ -4,11 +4,10 @@ This repository contains the projects and assignments for the Low Level Programm
 
 ## Table of Contents
 
-1.  [Introduction](https://chat.openai.com/chat?model=gpt-4#introduction)
-2.  [Getting Started](https://chat.openai.com/chat?model=gpt-4#getting-started)
-3.  [Projects](https://chat.openai.com/chat?model=gpt-4#projects)
-4.  [Contributing](https://chat.openai.com/chat?model=gpt-4#contributing)
-5.  [License](https://chat.openai.com/chat?model=gpt-4#license)
+1.  [Introduction](#introduction)
+2.  [Getting Started](#getting-started)
+3.  [Projects](#projects)
+
 
 ## Introduction
 
