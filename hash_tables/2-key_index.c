@@ -1,10 +1,10 @@
 #include "hash_tables.h"
 /**
- *unsigned long int key_index -
+ * key_index - finds index for key
+ * @key: key used to find index
+ * @size: size of the array of index values
  *
- *
- *
- *
+ * Return: success returns index, fail 0
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {

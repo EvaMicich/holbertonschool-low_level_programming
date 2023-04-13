@@ -1,4 +1,11 @@
 #include "hash_tables.h"
+/**
+ * make_node - creates a new node
+ * @key: key of node
+ * @value: value held by new node
+ *
+ * Return: success for pointer to new node, or NULL on fail
+ */
 hash_node_t *make_node(const char *key, const char *value)
 {
 	hash_node_t *new_node;
@@ -50,7 +57,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(key, ht->array[index]->key) == 0)
 		{
-			ht->array[index]->value =(char *)value;
+			ht->array[index]->value = (char *)value;
 			return (1);
 		}
 	}
