@@ -46,7 +46,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		return (0);
 	}
-	new_node->next = ht->array[index];
-	ht->array[index] = new_node;
-	return (1);
+	if (ht->array[index] != NULL)
+	{
+		if (strcmp(key, ht->array[index]->key) == 0)
+		{
+			ht->array[index]->value =(char *)value;
+		}
+	}
+	else
+	{
+		new_node->next = ht->array[index];
+		ht->array[index] = new_node;
+	}
+		return (1);
 }
