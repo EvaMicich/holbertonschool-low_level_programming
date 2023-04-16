@@ -46,6 +46,7 @@ int main(int argc, char *argv[])
 		{
 			exit(99);
 		}
+		read_out = read(fd_in, buff, 1024);
 	}
 	if (close(fd_in) == -1)
 	{
