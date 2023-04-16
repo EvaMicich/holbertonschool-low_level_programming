@@ -56,5 +56,5 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE"), exit(100);
 	}
-	return (write_out);
+	return (0);
 }
